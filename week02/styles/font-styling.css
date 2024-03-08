@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'rock_saltregular';
+    src: url('../Fonts/rocksalt-webfont.woff') format('woff2'),
+         url('../Fonts/rocksalt-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: rock_saltregular, 'Bradley Hand, cursive';
+}
