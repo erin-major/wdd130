@@ -75,6 +75,7 @@ footer {
 footer p {
     text-align: center;
     grid-column: 1/5;
+    color: var(--accent1-color);
 }
 
 footer img {
@@ -103,7 +104,7 @@ footer img {
 }
 
 .hero p {
-    color: var(--secondary-color);  
+    color: white;  
 }
 
 .hero article {
