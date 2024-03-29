@@ -85,3 +85,7 @@ button:hover {
     background-color: #fed7a4; 
 }
 
+input, textarea, select {
+    padding: .3em;
+}
+
