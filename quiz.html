@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>    
+    <meta name="description" content="This is a quiz on html and css.">
+    <meta name="author" content="Erin Major">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <div class="form-item row1">
+                    <label for="q1">1. What is the shorthand in Visual Studio for adding an html base structure?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+                <div class="form-item row2">
+                    <label for="q2">2. Explain the relationship between HTML and CSS.</label>
+                    <textarea id="q2" name="q2" rows="4"></textarea>
+                </div>
+                <div class="form-item row3">
+                <label for="q3">3. Which is the largest heading in html?</label>
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose one...</option>
+                    <option value="">h3</option>
+                    <option value="">h2</option>
+                    <option value="">h1</option>
+                </select>
+                </div>
+                <div class="form-item row4">
+                    <label for="q4">4. Which number represents the ending column of .box1?</label>
+                    <img src="/images/code-snippet.jpg" alt="A snippet of code">
+                    <input type="number" id="q4" name="q4">
+                </div>
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+            
+        </form>
+    </main>
+    
+</body>
+</html>

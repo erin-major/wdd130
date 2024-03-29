@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 600px;
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+    color: #003d0c;
+    
+}
+
+header {
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    margin: .2em;
+    border: 3px solid #fed7a4;   
+    border-radius: 5px;
+    background-color: antiquewhite;    
+}
+
+h1 {
+    padding: .3em;
+}
+
+form {
+    margin: 0 .2em 0 .2em;
+    display: grid;
+    
+    
+}
+
+fieldset {
+    padding: 1em;
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
+    margin-bottom: 5px; 
+    background-color: bisque;   
+}
+
+label {
+    text-align: center;  
+    font-weight: bold;  
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.row1, .row3 {
+    grid-template-rows: 2fr 1fr;
+    margin-bottom: 20px;
+}
+
+.row2 {
+    margin-bottom: 10px;
+}
+
+.row2 label, .row4 label, .row4 img {
+    margin-bottom: 11px;
+}
+
+.row4 {
+    display: grid;
+    align-items: center;
+}
+
+.row4 img {
+    justify-self: center;
+}
+
+button {
+    padding: 5px;
+    font-weight: bolder;    
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid #fed7a4;
+    background-color: antiquewhite; 
+}
+
+button:hover {    
+    background-color: #fed7a4; 
+}
+
