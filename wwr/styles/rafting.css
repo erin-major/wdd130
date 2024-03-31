@@ -182,23 +182,22 @@ header nav a:hover {
     color: var(--accent1-color);
 }
 
-.section1, .section2 {
+.section1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
-}
-
-.section1 {
     border: 2px solid var(--accent1-color);
     border-radius: 5px;
     background-color: var(--accent1-color);
     margin-bottom: 2em;
 }
+
 .contact {
     display: grid;    
     grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr;
     gap: 5px;    
     margin: 20px;
     height: 400px;
@@ -208,11 +207,7 @@ header nav a:hover {
     background-color: white;
 }
 
-.contact {
-    grid-template-rows: .5fr 1r 1fr 1fr;
-}
-
-.contact h1, h2, p, .form h1 {
+.contact h1, h2, p {
     padding: 0 0 0 .5em;
 }
 
@@ -227,9 +222,14 @@ header nav a:hover {
 }
 
 .contact p {
-    font-size: 1em;
+    font-size: 1.3em;
     margin: .1em;
     letter-spacing: 0px;
+    font-weight: bold;
+}
+
+.address {
+    margin: 0px 0px 20px 0px;
 }
 
 .map {
@@ -238,32 +238,104 @@ header nav a:hover {
 }
 
 form {
-    grid-column: 1/1;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5 1fr);
+    display: grid;        
+    background-color: var(--primary-color);
+    border-radius: 5px;
 }
 
-.employees {
-    grid-column: 2/3;
+fieldset {
+    margin: 20px 20px 5px 20px;    
+    border: 2px solid var(--accent1-color);
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
 }
 
 label {
     font-family: var(--paragraph-font);
-    text-align: center;
+    color: var(--accent2-color);
+    font-weight: bold;
 }
 
-fieldset {
-    margin: 5px;
-    padding: 5px;
-    border: none;
+form h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.row1, .row2 {
+    grid-template-rows: 2fr 1fr;
+}
+
+.row3 {
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+}
+
+.row3 h2 {
+    padding: 0px;
+    margin: 20px 0px 5px 0px;
+}
+
+.row4 {
+    grid-template-rows: .5fr 1fr; 
+}
+
+.row5 {
+    grid-template-columns: .1fr 2fr;
+    margin-top: 1em;
 }
 
 button {
-   width: 300px; 
+    grid-row: 2/3;
+    width: 200px;
+    margin: 2px 20px 15px 20px;
+    padding: 5px;
+    font-size: 1.5em; 
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+    border-radius: 5px;
 }
 
+button:hover {
+    background-color: var(--secondary-color);
+}
 
+input, textarea, select {
+    padding: .3em;
+}
 
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.employees figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.employees img {
+    border-radius: 10px;
+}
+
+.employees figcaption {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    padding: 10px;
+    color: var(--accent1-color);
+    font-size: 15px;
+    font-style: italic;
+}
 
 
