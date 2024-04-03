@@ -172,7 +172,7 @@ header nav a:hover {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    align-items: center;
+    align-items: start;
 }
 
 .adventure h2 {
@@ -186,7 +186,7 @@ header nav a:hover {
     flex-flow: column;
     padding: 5px;
     max-width: 150px;
-    margin: auto;
+    margin: auto;    
 }
 
 .adventure figcaption {
