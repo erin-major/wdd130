@@ -61,6 +61,7 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     padding: 10px;
+    clear: both;
 }
 
 footer p {
@@ -386,6 +387,7 @@ input, textarea, select {
     display: grid;
     align-items: center;
     justify-items: center;
+    margin-bottom: 40px;
 }
 
 .book-info p {
@@ -404,12 +406,13 @@ input, textarea, select {
     font-size: 35px;
 }
 
-.column1 {
+aside {
     display: grid;
     float: left;
     text-align: center;
-    width: 500px;
+    width: 400px;
     justify-items: center;
+    margin-top: 85px;
 }
 
 .trip1, .trip2, .trip3 {
@@ -417,40 +420,79 @@ input, textarea, select {
     justify-items: center;
 }
 
-.column1 img {
-    width: 400px;
+aside img {
+    width: 300px;
     border-radius: 5px;
     grid-row: 1/1;
     grid-column: 1/2;    
 }
 
-.column1 h2 {
+aside h2 {
     padding: 0px;
     margin: 5px 0px 50px 0px;
-    font-size: 28px;
+    font-size: 20px;
 }
 
-.column1 p, .column2 p, .column3 p {
+aside p {
     color: var(--secondary-color);
     grid-row: 1/1;
     grid-column: 1/2;
-    width: 390px;
+    width: 290px;
     align-self: center;
     justify-self: center;
-    opacity: 0; 
-    height: 200px;
-    font-size: 20px;
+    opacity: 0;     
+    font-size: 15px;
     font-weight: bolder;
     padding: 10px 0px;
     border-radius: 10px;
 }
 
-.column1 p:hover {
+aside p:hover {
     opacity: 5;
     background-color: var(--accent2-color);
-    width: 390px; 
+    width: 290px; 
     box-shadow: 0 0 10px var(--secondary-color);
     box-shadow: 0 0 10px var(--secondary-color);   
 }
+
+.reservations {    
+    float: right;
+    width: 600px;
+}
+
+.reservations h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+    letter-spacing: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;      
+}
+
+table, th, td {
+    border: 3px groove var(--secondary-color);
+  }
+
+th {
+    font-family: var(--heading-font);
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+}
+
+th, td {
+    padding: 10px;
+}
+
+td {
+    font-family: var(--paragraph-font);
+}
+
 
 
