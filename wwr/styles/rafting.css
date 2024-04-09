@@ -523,26 +523,26 @@ td {
     border: 1px solid var(--primary-color);
     margin: 5px 20px;
     display: grid;
-    align-items: center;
-    justify-items: start;
-    grid-template-rows: 1fr 4fr;
-    height: 100px;
+    height: 200px;
     background-color: var(--secondary-color);
 }
 
 .newsletter label {
-    font-size: 30px;
     margin: 8px 20px;
-    align-self: end;  
+    justify-self: start;
+    align-self: end;
+    font-size: 20px;
+    margin:
 }
 
 .newsletter input {
-    width: 230px;
+    width: 250px;
     margin-left: 20px;
     font-family: var(--paragraph-font);
     height: 25px;
-    padding-left: 10px;
-    margin-bottom: 10px;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    align-self: start;
 }
 
 .intro p {
@@ -553,7 +553,7 @@ td {
 
 .intro button {
     grid-column: 2/3;
-    grid-row: 3/4;    
+    grid-row: 4/5;    
     width: 200px;
     font-family: var(--heading-font);
     font-size: 20px;
@@ -565,6 +565,7 @@ td {
 .intro a {
     font-size: 50px;
     letter-spacing: 2px;
+    grid-column: 1/2;
 }
 
 .info {
