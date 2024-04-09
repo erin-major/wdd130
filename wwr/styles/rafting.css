@@ -17,7 +17,7 @@
 
 header {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1.5fr 3fr;
     grid-template-rows: 1fr;
     align-items: center;
     gap: 5px; 
@@ -28,6 +28,7 @@ header img {
     margin: 5px;
     justify-self: center;
     align-self: center;
+    grid-column: 1/2;
 }
 
 nav {
@@ -111,20 +112,33 @@ header nav a:hover {
     text-decoration: none;
 }
 
+.hero {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
 .hero img {
-    display: block;
+    grid-column: 1/1;
+    grid-row: 1/4;
     width: 1000px;
     height: auto;
+    z-index: 0;
+    border-radius: 20px;
 }
 
 .hero h1 {
     font-family: var(--heading-font);
     letter-spacing: 6px;
     color: var(--secondary-color);    
-    position: absolute;
     top: 15%;
     left: 18%;
-    font-size: 100px;
+    font-size: 90px;
+    grid-row: 1/2;
+    grid-column: 1/1;
+    z-index: 1;
 }
 
 .hero p {
@@ -135,11 +149,13 @@ header nav a:hover {
     box-sizing: border-box;
     width: 1000px;    
     padding: 5px;
-    position: absolute;
+    grid-row: 2/3;
+    grid-column: 1/2;
     top: 40%;
     text-align: center;
     background-color: var(--primary-color);
     opacity: 100%;
+    z-index: 1;
 }
 
 .hero article img {
@@ -154,9 +170,10 @@ header nav a:hover {
     grid-template-rows: 1fr 1.5fr;
     align-items: center;
     justify-items: center;
-    border: 5px solid var(--accent2-color);
+    border: 5px solid var(--primary-color);
     margin: 5px;
     background-color: var(--secondary-color);
+    border-radius: 10px;
 }
 
 .history h2 {
@@ -188,6 +205,10 @@ header nav a:hover {
     padding: 5px;
     max-width: 150px;
     margin: auto;    
+}
+
+.adventure img {
+    border-radius: 10px;
 }
 
 .adventure figcaption {
@@ -494,5 +515,165 @@ td {
     font-family: var(--paragraph-font);
 }
 
+.heading {
+    display:grid;
+    grid-template-rows: 4fr .5fr;
+    grid-template-columns: 1.8fr 1.5fr 2fr 1fr;   
+}
 
+.heading img {
+    grid-row: 1/3;
+    grid-column: 1/4;
+    z-index: 0;
+    width: 1000px;
+}
 
+.heading h1, .heading h2 {
+    z-index: 1;
+    align-self: end;
+    background-color: var(--secondary-color);
+    letter-spacing: 3px;
+    justify-self: center;
+}
+
+.heading h1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding: 10px 30px;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.heading h2 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    padding-left: 30px;
+    padding: 10px 30px;    
+    margin-top: 0px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: .5fr 2fr .3fr .5fr;
+}
+
+.intro h2 {
+    font-size: 30px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
+
+.intro h2, .intro button {
+    align-self: center;
+    justify-self: center;
+}
+
+.newsletter {
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 1px solid var(--primary-color);
+    margin: 5px 20px;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-rows: 1fr 4fr;
+    height: 100px;
+    background-color: var(--secondary-color);
+}
+
+.newsletter label {
+    font-size: 30px;
+    margin: 8px 20px;
+    align-self: end;  
+}
+
+.newsletter input {
+    width: 230px;
+    margin-left: 20px;
+    font-family: var(--paragraph-font);
+}
+
+.intro p {
+    grid-row: 1/4;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.intro button {
+    grid-column: 2/3;
+    grid-row: 3/4;    
+    width: 200px;
+    font-family: var(--heading-font);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+.intro a {
+    font-family: var(--heading-font);
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.intro a:visited {
+    color: var(--primary-color);
+}
+
+.intro a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+.info {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.why, .who {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    align-items: center;
+    justify-items: center;
+}
+
+.who h2, img, .why p {
+    grid-column: 2/3;
+}
+
+.who img, .why img {    
+    width: 450px;
+    border-radius: 20px;
+}
+
+.who p, .why img {
+    grid-column: 1/2;
+}
+
+.why p, .who p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.why h2, .who h2 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 10px;
+}
+
+.why h2 {
+    color: var(--accent1-color)
+}
+
+.who h2 {
+    color: var(--accent2-color)
+}
+
+.who p {
+    grid-row: 2/3;
+}
