@@ -595,6 +595,7 @@ td {
     font-family: var(--paragraph-font);
     height: 25px;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .intro p {
